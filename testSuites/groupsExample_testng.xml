@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+	<run>
+		<include name="LoginErrorValidations"/><!-- name of group = LoginErrorValidations
+		we need to mention this groups to all the test methods that we want to include and for before & after methods mention it as
+		@BeforeMethod(alwaysRun=true) -->
+	</run>
+</groups>
+  <test thread-count="5" name="Error Validations Test">
+    <classes>
+      <class name="vivek.TestClasses.ErrorValidations"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Submit Order Test">
+    <classes>
+    <class name="vivek.TestClasses.FrameWorkTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

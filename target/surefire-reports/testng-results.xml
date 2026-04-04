@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-28T13:39:47 IST" name="Suite" finished-at="2026-03-28T13:40:30 IST" duration-ms="43465">
+    <groups>
+    </groups>
+    <test started-at="2026-03-28T13:39:47 IST" name="Error Validations Test" finished-at="2026-03-28T13:40:30 IST" duration-ms="43465">
+      <class name="vivek.TestClasses.ErrorValidationswithDataFromJSON">
+        <test-method is-config="true" signature="initializeApplication()[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:39:47 IST" name="initializeApplication" finished-at="2026-03-28T13:40:03 IST" duration-ms="15621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeApplication -->
+        <test-method signature="loginWithInvalidCreds(java.util.HashMap)[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:40:03 IST" name="loginWithInvalidCreds" data-provider="getDataFromDP" finished-at="2026-03-28T13:40:03 IST" duration-ms="692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Vivek98, email=dummyVivek9809@gmail.com, errorMsg=Incorrect email or password.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCreds -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:40:03 IST" name="tearDown" finished-at="2026-03-28T13:40:05 IST" duration-ms="1053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeApplication()[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:40:05 IST" name="initializeApplication" finished-at="2026-03-28T13:40:14 IST" duration-ms="9945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeApplication -->
+        <test-method signature="loginWithInvalidCreds(java.util.HashMap)[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:40:14 IST" name="loginWithInvalidCreds" data-provider="getDataFromDP" finished-at="2026-03-28T13:40:16 IST" duration-ms="1094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Vivek98, email=dummyVivek123@gmail.com, errorMsg=Incorrect email or password.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCreds -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:40:16 IST" name="tearDown" finished-at="2026-03-28T13:40:17 IST" duration-ms="1085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeApplication()[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:40:17 IST" name="initializeApplication" finished-at="2026-03-28T13:40:28 IST" duration-ms="11370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeApplication -->
+        <test-method signature="loginWithInvalidCreds(java.util.HashMap)[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:40:28 IST" name="loginWithInvalidCreds" data-provider="getDataFromDP" finished-at="2026-03-28T13:40:29 IST" duration-ms="643" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Vivek98, email=dummyVivek9809@gmail.com, errorMsg=Incorrect emailorpassword.}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect emailorpassword.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect emailorpassword.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at vivek.TestClasses.ErrorValidationswithDataFromJSON.loginWithInvalidCreds(ErrorValidationswithDataFromJSON.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCreds -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vivek.TestClasses.ErrorValidationswithDataFromJSON@5e600dd5]" started-at="2026-03-28T13:40:29 IST" name="tearDown" finished-at="2026-03-28T13:40:30 IST" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- vivek.TestClasses.ErrorValidationswithDataFromJSON -->
+    </test> <!-- Error Validations Test -->
+  </suite> <!-- Suite -->
+</testng-results>

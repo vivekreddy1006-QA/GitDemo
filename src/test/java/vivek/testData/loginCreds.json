@@ -1,0 +1,17 @@
+[
+  {
+    "email":"dummyVivek9809@gmail.com",
+    "pass":"Vivek98",
+    "errorMsg": "Incorrect email or password."
+  },
+  {
+    "email":"dummyVivek123@gmail.com",
+    "pass":"Vivek98",
+    "errorMsg": "Incorrect email or password."
+  },
+  {
+    "email":"dummyVivek9809@gmail.com",
+    "pass":"Vivek98",
+    "errorMsg": "Incorrect emailorpassword."
+  }
+]
