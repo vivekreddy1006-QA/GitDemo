@@ -22,7 +22,7 @@ public class ConfirmMessage extends AbstractComponents {
 	}
 
 	public String orderConfirmMessage() {
-
+			System.out.println(confirmMsg.getText());
 			return confirmMsg.getText();
 
 	}
